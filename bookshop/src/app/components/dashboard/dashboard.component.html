@@ -1,0 +1,83 @@
+<section class="book">
+<div class="container">
+  <div class="row" style="min-width: 100%;">
+    <!-- <div class="col-md-3"> -->
+
+
+          <div class="card col" *ngFor="let book of Books; let i = index"  style="width: 18rem;">
+            <img class="card-img-top" style="width: 250px;     padding-left: 15px;
+            height: 250px;" src="{{book.imagePath}}" alt="Card image cap">
+            <div class="card-body" style="text-align: center;">
+              <p class="card-title">{{book.name}}</p>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <!-- <div class="content"> -->
+                <h4>Price : ₹ {{book.price}}</h4>
+                <!-- <button type="button" class="btn" (click)="plusCount(i)"><i class="fa fa-plus"></i></button> -->
+                <!-- <span>{{book.count}}</span> -->
+                <!-- <button type="button" class="btn" (click)="minusCount(i)"><i class="fa fa-minus"></i></button> -->
+              <!-- </div> -->
+              <button type="button" (click)="addCart(book)" class="cart_btn">Add To Cart</button>
+
+          </div>
+          </div>
+
+
+      <!-- <div class="box">
+
+
+
+        <div class="book-image">
+          <img style="width: 200px;
+          height: 250px;" src="..//..//../assets/image1.jpg" alt="b1">
+        </div>
+        <div class="content">
+          <h4>₹ 400</h4>
+          <button type="button" class="btn"><i class="fa fa-plus"></i></button>
+          <span>2</span>
+          <button type="button" class="btn"><i class="fa fa-minus"></i></button>
+        </div>
+        <button type="button" class="cart_btn">Add To Cart</button>
+
+    </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-md-4">
+      <div class="box">
+
+
+
+        <div class="book-image">
+          <img style="width: 200px;
+          height: 250px;" src="..//..//../assets/b1.jpg" alt="b1">
+        </div>
+        <div class="content">
+          <h4>₹ 400</h4>
+          <button type="button" class="btn"><i class="fa fa-plus"></i></button>
+          <span>2</span>
+          <button type="button" class="btn"><i class="fa fa-minus"></i></button>
+        </div>
+        <button type="button" class="cart_btn">Add To Cart</button>
+
+    </div>
+    </div> -->
+    <!-- <div class="col-md-4">
+      <div class="box">
+
+
+
+        <div class="book-image">
+          <img style="width: 200px;
+          height: 250px;" src="..//..//../assets/b1.jpg" alt="b1">
+        </div>
+        <div class="content">
+          <h4>₹ 400</h4>
+          <button type="button" class="btn"><i class="fa fa-plus"></i></button>
+          <span>2</span>
+          <button type="button" class="btn"><i class="fa fa-minus"></i></button>
+        </div>
+        <button type="button" class="cart_btn">Add To Cart</button>
+
+    </div>
+    </div> -->
+  </div>
+</div>
+</section>

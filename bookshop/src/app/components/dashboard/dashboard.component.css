@@ -1,0 +1,58 @@
+.book{
+  padding: 40px 0;
+}
+.box{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* width: 200px;
+  height: 310px; */
+}
+
+.content h4{
+  margin-top: 10px;
+}
+
+.btn{
+  background: rgb(94,0,0);
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  margin: 0, 8px;
+}
+
+.content span{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.cart_btn{
+    border-radius: 4px;
+    background: rgb(94,0,0);
+    border:1px solid rgb(94,0,0);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+
+    border:none;
+    padding: 4px 16px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.cart_btn:hover{
+  color: rgb(94,0,0);
+  background: transparent;
+  border: 1px solid rgb(94,0,0);
+}
+
+.col {
+  flex: 0 0 20%;
+  max-width: 20%;
+  max-width: 300px;
+  display: inline-block;
+ padding: 10px;
+}
+.row{
+  padding: 25px;
+}

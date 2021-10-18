@@ -1,0 +1,52 @@
+<section class="cart_section">
+  <div class="container">
+
+    <h2 style="padding: 20px;">
+      Cart
+    </h2>
+    <div class="row" style="padding: 20px;">
+
+
+    <table>
+      <tr>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Sub Total</th>
+        <th>Remove Item</th>
+      </tr>
+      <tr *ngFor="let cartItem of cartList; let i = index">
+        <td >
+          <div class="card" style="width: 5rem;">
+            <img class="card-img-top" style="width: 250px;
+            height: 250px;" src="{{cartItem.imagePath}}" alt="Card image cap">
+            </div>
+            </td>
+        <td>₹ {{cartItem.price}}</td>
+        <td>
+          <div class="content">
+            <button type="button" (click)="plusCount(cartItem.id, cartItem.count)" class="btn button"><i class="fa fa-plus"></i></button>
+            <span>{{cartItem.count}}</span>
+            <button type="button" (click)="minusCount(cartItem.id, cartItem.count)" class="btn button"><i class="fa fa-minus"></i></button>
+          </div>
+        </td>
+        <td>
+          {{cartItem.count * cartItem.price}}
+        </td>
+        <td>
+          <button type="button" (click)="deleteCartItem(i, cartItem)" class="btn deleteButton"><i class="fa fa-trash"></i></button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="row" style="padding: 20px; display: inline-flex; min-width: 100%;">
+    <div class="col-md-6" style="min-width: 50%;">
+
+    </div>
+    <div class = "col-md-6" style="min-width: 50%; text-align: center;">
+      <h3>Total - ₹ {{total}}</h3>
+    </div>
+  </div>
+  </div>
+
+</section>
